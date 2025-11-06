@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hadaf Immigration Consultancy | Your Pathway to Europe</title>
+    <link rel="icon" href="./assets/webpage-icon.png" />
+    <meta
+      name="description"
+      content="Expert student placement and visa consultancy specializing in European destinations like Lithuania, Poland, and Hungary."
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Font: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Global Loader -->
+    <div
+      id="loader"
+      class="fixed inset-0 bg-primary-blue flex flex-col items-center justify-center z-[500] text-center"
+    >
+      <div
+        class="spinner w-16 h-16 border-4 border-solid rounded-full mb-4"
+      ></div>
+      <p class="text-accent-gold font-semibold tracking-wide animate-pulse">
+        Loading, please wait...
+      </p>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-lg">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20"
+      >
+        <!-- Logo -->
+        <a
+          href="index.html"
+          class="text-2xl font-bold text-primary-blue tracking-wider hover:text-accent-gold transition duration-300"
+        >
+          Hadaf <span class="text-accent-gold">Immigration</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex space-x-6 font-semibold">
+          <a
+            href="#hero"
+            class="text-gray-600 hover:text-primary-blue hover:scale-[1.05] transition duration-300"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-gray-600 hover:text-primary-blue hover:scale-[1.05] transition duration-300"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="text-gray-600 hover:text-primary-blue hover:scale-[1.05] transition duration-300"
+            >Services</a
+          >
+          <a
+            href="#success"
+            class="text-gray-600 hover:text-primary-blue hover:scale-[1.05] transition duration-300"
+            >Success</a
+          >
+          <a
+            href="#testimonials"
+            class="text-gray-600 hover:text-primary-blue hover:scale-[1.05] transition duration-300"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-600 hover:text-primary-blue hover:scale-[1.05] transition duration-300"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Social Icons & Mobile Menu Button -->
+        <div class="flex items-center space-x-4">
+          <div class="hidden lg:flex space-x-3 text-primary-blue">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="social hover:transition duration-300 transform hover:scale-110"
+              ><i class="fab fa-facebook-f text-lg"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="social hover:transition duration-300 transform hover:scale-110"
+              ><i class="fab fa-instagram text-lg"></i
+            ></a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="social hover:transition duration-300 transform hover:scale-110"
+              ><i class="fab fa-linkedin-in text-lg"></i
+            ></a>
+            <a
+              href="https://wa.me/+923001234567"
+              target="_blank"
+              class="social hover:transition duration-300 transform hover:scale-110"
+              ><i class="fab fa-whatsapp text-lg"></i
+            ></a>
+          </div>
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-open"
+            class="lg:hidden p-2 text-primary-blue hover:text-accent-gold transition duration-300 transform hover:scale-110"
+          >
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Animated Navigation Modal -->
+    <div
+      id="nav-modal"
+      class="fixed top-0 left-0 h-screen w-80 bg-primary-blue shadow-xl transform -translate-x-full transition-transform duration-500 ease-in-out z-[100]"
+    >
+      <div class="p-6">
+        <button
+          id="mobile-menu-close"
+          class="absolute top-4 right-4 text-white hover:text-accent-gold transition duration-300 transform hover:scale-110"
+        >
+          <i class="fas fa-times text-2xl"></i>
+        </button>
+        <h2 class="text-3xl font-bold text-white mt-10 mb-8">Menu</h2>
+        <nav class="mobile-nav-links flex flex-col space-y-4 text-lg">
+          <a
+            href="#hero"
+            class="text-gray-300 hover:transition duration-300 nav-link hover:translate-x-1"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-gray-300 hover:transition duration-300 nav-link hover:translate-x-1"
+            >About Us</a
+          >
+          <a
+            href="#services"
+            class="text-gray-300 hover:transition duration-300 nav-link hover:translate-x-1"
+            >Services</a
+          >
+          <a
+            href="#success"
+            class="text-gray-300 hover:transition duration-300 nav-link hover:translate-x-1"
+            >Success</a
+          >
+          <a
+            href="#testimonials"
+            class="text-gray-300 hover:transition duration-300 nav-link hover:translate-x-1"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-300 hover:transition duration-300 nav-link hover:translate-x-1"
+            >Contact</a
+          >
+        </nav>
+        <div
+          class="mobile-nav-links mt-12 pt-4 border-t border-blue-700 flex justify-center space-x-6 text-white"
+        >
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="hover:text-accent-gold transition duration-300 transform hover:scale-110"
+            ><i class="fab fa-facebook-f text-xl"></i
+          ></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="hover:transition duration-300 transform hover:scale-110"
+            ><i class="fab fa-instagram text-xl"></i
+          ></a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            class="hover:transition duration-300 transform hover:scale-110"
+            ><i class="fab fa-linkedin-in text-xl"></i
+          ></a>
+          <a
+            href="https://wa.me/+923001234567"
+            target="_blank"
+            class="hover:transition duration-300 transform hover:scale-110"
+            ><i class="fab fa-whatsapp text-xl"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Overlay -->
+    <div
+      id="nav-overlay"
+      class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out z-40"
+    ></div>
+
+    <main class="pt-20">
+      <!-- 1. Hero Section (Video Banner Simulation) -->
+      <section
+        id="hero"
+        class="hero-banner relative flex items-center justify-center text-center"
+      >
+        <!-- bg-primary-blue -->
+        <div class="hero absolute inset-0 bg-opacity-0"></div>
+        <div class="relative z-10 p-6 max-w-4xl mx-auto fade-in">
+          <h1
+            class="text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-4 animate-pulse-slow"
+          >
+            Your Pathway to <span class="text-accent-gold">Europe</span> Starts
+            Here
+          </h1>
+          <p class="text-xl sm:text-2xl text-gray-200 mb-8">
+            100+ Students Successfully Placed in Top European Universities
+          </p>
+          <div
+            class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6"
+          >
+            <a
+              href="#contact"
+              class="bg-accent-gold text-primary-blue font-bold py-3 px-8 rounded-lg shadow-xl hover:bg-yellow-500 transition duration-300 transform hover:scale-105 hover:shadow-2xl"
+            >
+              <i
+                class="fas fa-graduation-cap mr-2 transition duration-300 group-hover:scale-110"
+              ></i>
+              Apply Now
+            </a>
+            <a
+              href="#"
+              onclick="openCallbackModal(); return false;"
+              class="bg-white text-primary-blue font-bold py-3 px-8 rounded-lg shadow-xl hover:bg-gray-100 transition duration-300 transform hover:scale-105 border-2 border-primary-blue hover:shadow-2xl"
+            >
+              <i
+                class="fas fa-calendar-check mr-2 transition duration-300 group-hover:scale-110"
+              ></i>
+              Book Free Consultation
+            </a>
+          </div>
+          <p class="text-sm text-gray-300 mt-6 font-medium">
+            Specialized in Lithuania, Poland, Hungary, and other European
+            destinations
+          </p>
+        </div>
+      </section>
+
+      <!-- 2. About Us Section -->
+      <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="fade-in">
+              <h2
+                class="text-sm font-semibold text-accent-gold uppercase tracking-widest mb-2"
+              >
+                Who We Are
+              </h2>
+              <h3 class="text-4xl font-bold text-primary-blue mb-6">
+                Guiding Dreams Beyond Borders
+              </h3>
+              <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                Hadaf Immigration Consultancy, founded by Ubaid Ahmad, is
+                dedicated to providing transparent and comprehensive guidance
+                for students aspiring to pursue education in Europe. Our core
+                expertise lies in student placement and visa consultancy,
+                particularly for countries like Lithuania, Poland, and Hungary.
+              </p>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                With 5+ years of dedicated experience, we ensure a smooth
+                transition from application to enrollment. We offer end-to-end
+                support, including pre-departure guidance and crucial
+                post-arrival assistance, making your international study journey
+                seamless and stress-free.
+              </p>
+              <ul class="space-y-3 text-gray-700 font-medium">
+                <li>
+                  <i
+                    class="fas fa-check-circle text-accent-gold mr-3 transition duration-300 hover:scale-110"
+                  ></i>
+                  Expert Student Visa & Placement Consultancy
+                </li>
+                <li>
+                  <i
+                    class="fas fa-check-circle text-accent-gold mr-3 transition duration-300 hover:scale-110"
+                  ></i>
+                  Complete Pre-departure & Post-arrival Support
+                </li>
+                <li>
+                  <i
+                    class="fas fa-check-circle text-accent-gold mr-3 transition duration-300 hover:scale-110"
+                  ></i>
+                  Founded by Ubaid Ahmad, CEO
+                </li>
+              </ul>
+            </div>
+
+            <!-- Image Placeholder -->
+            <div
+              class="relative rounded-xl overflow-hidden shadow-2xl transition duration-500 hover:shadow-primary-blue/50 transform hover:scale-[1.01] fade-in"
+            >
+              <!-- src="https://placehold.co/600x400/1E3A8A/ffffff?text=Ubaid+Ahmad%0AFounder+and+CEO" -->
+              <img
+                src="./assets/ubaid-ahmad-ceo.jpg"
+                alt="Ubaid Ahmad, Founder & CEO, Hadaf Immigration Consultancy"
+                class="w-full h-auto object-cover"
+              />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-primary-blue bg-opacity-80 p-4"
+              >
+                <h4 class="text-white text-xl font-bold">Ubaid Ahmad</h4>
+                <p class="text-accent-gold">Founder & CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Services Section -->
+      <section id="services" class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2
+            class="text-sm font-semibold text-accent-gold uppercase tracking-widest mb-2 fade-in"
+          >
+            Our Offerings
+          </h2>
+          <h3 class="text-4xl font-bold text-primary-blue mb-12 fade-in">
+            Comprehensive Student Services
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Service Card Template -->
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-accent-gold hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group fade-in"
+            >
+              <i
+                class="fas fa-passport text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110 group-hover:text-primary-blue"
+              ></i>
+              <h4 class="text-xl font-bold text-primary-blue mb-3">
+                Student Visa Guidance
+              </h4>
+              <p class="text-gray-600">
+                Complete assistance with visa application, documentation, and
+                submission for high success rates.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-accent-gold hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group fade-in"
+            >
+              <i
+                class="fas fa-school text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110 group-hover:text-primary-blue"
+              ></i>
+              <h4 class="text-xl font-bold text-primary-blue mb-3">
+                Admission Support
+              </h4>
+              <p class="text-gray-600">
+                Course and university selection, application filing, and
+                securing your Letter of Acceptance.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-accent-gold hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group fade-in"
+            >
+              <i
+                class="fas fa-hand-holding-usd text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110 group-hover:text-primary-blue"
+              ></i>
+              <h4 class="text-xl font-bold text-primary-blue mb-3">
+                Scholarship Assistance
+              </h4>
+              <p class="text-gray-600">
+                Guidance on available grants and scholarships to reduce your
+                educational costs.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-accent-gold hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group fade-in"
+            >
+              <i
+                class="fas fa-plane-departure text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110 group-hover:text-primary-blue"
+              ></i>
+              <h4 class="text-xl font-bold text-primary-blue mb-3">
+                Travel & Accommodation
+              </h4>
+              <p class="text-gray-600">
+                Arranging flights, airport pickups, and comfortable housing
+                before you arrive.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-accent-gold hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group fade-in"
+            >
+              <i
+                class="fas fa-file-contract text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110 group-hover:text-primary-blue"
+              ></i>
+              <h4 class="text-xl font-bold text-primary-blue mb-3">
+                Document Verification
+              </h4>
+              <p class="text-gray-600">
+                Thorough checking and authentication of all educational and
+                personal documents.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-accent-gold hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group fade-in"
+            >
+              <i
+                class="fas fa-user-tie text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110 group-hover:text-primary-blue"
+              ></i>
+              <h4 class="text-xl font-bold text-primary-blue mb-3">
+                Interview Preparation
+              </h4>
+              <p class="text-gray-600">
+                Mock interviews and essential tips to successfully clear
+                university and embassy interviews.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-accent-gold hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group fade-in"
+            >
+              <i
+                class="fas fa-briefcase text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110 group-hover:text-primary-blue"
+              ></i>
+              <h4 class="text-xl font-bold text-primary-blue mb-3">
+                Career Counseling
+              </h4>
+              <p class="text-gray-600">
+                Advice on future career prospects and post-study opportunities
+                in Europe.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-accent-gold hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group fade-in"
+            >
+              <i
+                class="fas fa-hands-helping text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110 group-hover:text-primary-blue"
+              ></i>
+              <h4 class="text-xl font-bold text-primary-blue mb-3">
+                Post-Arrival Guidance
+              </h4>
+              <p class="text-gray-600">
+                Support with local registration, bank accounts, and settling
+                into your new European city.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Why Choose Us Section -->
+      <section
+        id="why-choose"
+        class="py-16 md:py-24 bg-primary-blue text-white"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2
+            class="text-sm font-semibold text-accent-gold uppercase tracking-widest mb-2 fade-in"
+          >
+            Our Differentiators
+          </h2>
+          <h3 class="text-4xl font-bold text-white mb-12 fade-in">
+            The Hadaf Advantage
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Differentiator 1 -->
+            <div
+              class="p-6 bg-blue-900 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] hover:bg-primary-blue fade-in group"
+            >
+              <i
+                class="fas fa-handshake text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110"
+              ></i>
+              <h4 class="text-xl font-bold mb-3">Transparent Process</h4>
+              <p class="text-gray-300">
+                We maintain 100% clarity on fees, applications, and timelines,
+                ensuring trust at every step.
+              </p>
+            </div>
+
+            <!-- Differentiator 2 -->
+            <div
+              class="p-6 bg-blue-900 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] hover:bg-primary-blue fade-in group"
+              style="transition-delay: 0.1s"
+            >
+              <i
+                class="fas fa-award text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110"
+              ></i>
+              <h4 class="text-xl font-bold mb-3">100+ Successful Students</h4>
+              <p class="text-gray-300">
+                Proven track record of placing over a hundred students in
+                competitive European universities.
+              </p>
+            </div>
+
+            <!-- Differentiator 3 -->
+            <div
+              class="p-6 bg-blue-900 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] hover:bg-primary-blue fade-in group"
+              style="transition-delay: 0.2s"
+            >
+              <i
+                class="fas fa-users text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110"
+              ></i>
+              <h4 class="text-xl font-bold mb-3">Experienced Consultants</h4>
+              <p class="text-gray-300">
+                Our team possesses deep knowledge of European immigration and
+                academic systems.
+              </p>
+            </div>
+
+            <!-- Differentiator 4 -->
+            <div
+              class="p-6 bg-blue-900 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] hover:bg-primary-blue fade-in group md:col-start-1"
+              style="transition-delay: 0.3s"
+            >
+              <i
+                class="fas fa-user-tag text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110"
+              ></i>
+              <h4 class="text-xl font-bold mb-3">Personalized Guidance</h4>
+              <p class="text-gray-300">
+                Tailored advice based on your academic profile, budget, and
+                career goals.
+              </p>
+            </div>
+
+            <!-- Differentiator 5 -->
+            <div
+              class="p-6 bg-blue-900 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] hover:bg-primary-blue fade-in group"
+              style="transition-delay: 0.4s"
+            >
+              <i
+                class="fas fa-sitemap text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110"
+              ></i>
+              <h4 class="text-xl font-bold mb-3">
+                Direct University Partnerships
+              </h4>
+              <p class="text-gray-300">
+                Strong relationships with universities for faster admissions
+                processing.
+              </p>
+            </div>
+
+            <!-- Differentiator 6 -->
+            <div
+              class="p-6 bg-blue-900 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] hover:bg-primary-blue fade-in group md:col-start-3"
+              style="transition-delay: 0.5s"
+            >
+              <i
+                class="fas fa-dollar-sign text-5xl text-accent-gold mb-4 transition duration-300 group-hover:scale-110"
+              ></i>
+              <h4 class="text-xl font-bold mb-3">Affordable Processing Fees</h4>
+              <p class="text-gray-300">
+                High-quality service provided at reasonable and competitive
+                consultation fees.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Success Stories & Counters -->
+      <section id="success" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2
+            class="text-sm font-semibold text-accent-gold uppercase tracking-widest mb-2 fade-in"
+          >
+            Our Milestones
+          </h2>
+          <h3 class="text-4xl font-bold text-primary-blue mb-12 fade-in">
+            Proven Success, Global Reach
+          </h3>
+
+          <!-- Counters -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 fade-in">
+            <div
+              class="p-6 bg-white rounded-xl shadow-lg border-b-4 border-primary-blue transition duration-300 hover:shadow-2xl hover:border-accent-gold transform hover:scale-[1.02]"
+            >
+              <div
+                class="text-6xl font-extrabold text-primary-blue mb-2 counter"
+                data-target="100"
+              >
+                0
+              </div>
+              <p class="text-xl font-semibold text-gray-700">
+                + Successful Students
+              </p>
+            </div>
+            <div
+              class="p-6 bg-white rounded-xl shadow-lg border-b-4 border-primary-blue transition duration-300 hover:shadow-2xl hover:border-accent-gold transform hover:scale-[1.02]"
+            >
+              <div
+                class="text-6xl font-extrabold text-primary-blue mb-2 counter"
+                data-target="10"
+              >
+                0
+              </div>
+              <p class="text-xl font-semibold text-gray-700">
+                + Partner Universities
+              </p>
+            </div>
+            <div
+              class="p-6 bg-white rounded-xl shadow-lg border-b-4 border-primary-blue transition duration-300 hover:shadow-2xl hover:border-accent-gold transform hover:scale-[1.02]"
+            >
+              <div
+                class="text-6xl font-extrabold text-primary-blue mb-2 counter"
+                data-target="5"
+              >
+                0
+              </div>
+              <p class="text-xl font-semibold text-gray-700">
+                + Years of Experience
+              </p>
+            </div>
+          </div>
+
+          <!-- Country Flags / Focus Areas -->
+          <h4 class="text-3xl font-bold text-primary-blue mb-8">
+            Our Core Destinations
+          </h4>
+
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 text-5xl fade-in"
+            style="transition-delay: 0.3s"
+          >
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/de.png"
+                srcset="https://flagcdn.com/w80/de.png 2x"
+                width="40"
+                alt="Germany"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Germany</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/fr.png"
+                srcset="https://flagcdn.com/w80/fr.png 2x"
+                width="40"
+                alt="France"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">France</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/it.png"
+                srcset="https://flagcdn.com/w80/it.png 2x"
+                width="40"
+                alt="Italy"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Italy</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/es.png"
+                srcset="https://flagcdn.com/w80/es.png 2x"
+                width="40"
+                alt="Spain"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Spain</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/nl.png"
+                srcset="https://flagcdn.com/w80/nl.png 2x"
+                width="40"
+                alt="Netherlands"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Netherlands</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/se.png"
+                srcset="https://flagcdn.com/w80/se.png 2x"
+                width="40"
+                alt="Sweden"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Sweden</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/dk.png"
+                srcset="https://flagcdn.com/w80/dk.png 2x"
+                width="40"
+                alt="Denmark"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Denmark</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/fi.png"
+                srcset="https://flagcdn.com/w80/fi.png 2x"
+                width="40"
+                alt="Finland"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Finland</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/no.png"
+                srcset="https://flagcdn.com/w80/no.png 2x"
+                width="40"
+                alt="Norway"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Norway</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/ch.png"
+                srcset="https://flagcdn.com/w80/ch.png 2x"
+                width="40"
+                alt="Switzerland"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Switzerland</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/at.png"
+                srcset="https://flagcdn.com/w80/at.png 2x"
+                width="40"
+                alt="Austria"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Austria</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/be.png"
+                srcset="https://flagcdn.com/w80/be.png 2x"
+                width="40"
+                alt="Belgium"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Belgium</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/pl.png"
+                srcset="https://flagcdn.com/w80/pl.png 2x"
+                width="40"
+                alt="Poland"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Poland</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/ie.png"
+                srcset="https://flagcdn.com/w80/ie.png 2x"
+                width="40"
+                alt="Ireland"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Ireland</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/pt.png"
+                srcset="https://flagcdn.com/w80/pt.png 2x"
+                width="40"
+                alt="Portugal"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Portugal</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/ro.png"
+                srcset="https://flagcdn.com/w80/ro.png 2x"
+                width="40"
+                alt="Romania"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Romania</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/gr.png"
+                srcset="https://flagcdn.com/w80/gr.png 2x"
+                width="40"
+                alt="Greece"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Greece</span>
+            </div>
+
+            <div
+              class="country-flag flex flex-col items-center transition duration-300 hover:scale-110"
+            >
+              <img
+                src="https://flagcdn.com/w40/cz.png"
+                srcset="https://flagcdn.com/w80/cz.png 2x"
+                width="40"
+                alt="Czech Republic"
+                class="rounded shadow-md"
+              />
+              <span class="text-sm mt-1">Czech Republic</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Testimonials Section (Simple Carousel) -->
+      <section id="testimonials" class="py-16 md:py-24 bg-primary-blue">
+        <div
+          class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white"
+        >
+          <h2
+            class="text-sm font-semibold text-accent-gold uppercase tracking-widest mb-2 fade-in"
+          >
+            Hear From Our Students
+          </h2>
+          <h3 class="text-4xl font-bold text-white mb-10 fade-in">
+            Success Stories That Inspire
+          </h3>
+
+          <div class="relative">
+            <!-- Carousel Slides Container -->
+            <div id="testimonial-carousel" class="overflow-hidden">
+              <!-- Slides updated with testimonial-slide-transition class -->
+              <div
+                class="testimonial-slide testimonial-slide-transition p-8 bg-blue-900 rounded-xl shadow-2xl hidden"
+              >
+                <div class="text-2xl text-accent-gold mb-4">
+                  <i
+                    class="fas fa-quote-left transition duration-300 hover:scale-110"
+                  ></i>
+                </div>
+                <p class="text-lg italic mb-6">
+                  "Hadaf Immigration made my dream of studying in Lithuania a
+                  reality. The visa guidance was meticulous, and I felt
+                  supported every step of the way. Highly recommend their
+                  personalized approach!"
+                </p>
+                <div class="flex justify-center items-center space-x-3">
+                  <!-- src="https://placehold.co/60x60/FACC15/1E3A8A?text=JR" -->
+                  <img
+                    src="./assets/hassan-rizwan.jpg"
+                    alt="hassan-rizwan Profile"
+                    class="w-12 h-12 rounded-full object-cover border-2 border-accent-gold transition duration-300 hover:scale-105"
+                  />
+                  <div>
+                    <p class="font-bold text-white">Hassan Rizwan</p>
+                    <div class="text-accent-gold">
+                      <i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="testimonial-slide testimonial-slide-transition p-8 bg-blue-900 rounded-xl shadow-2xl hidden"
+              >
+                <div class="text-2xl text-accent-gold mb-4">
+                  <i
+                    class="fas fa-quote-left transition duration-300 hover:scale-110"
+                  ></i>
+                </div>
+                <p class="text-lg italic mb-6">
+                  "The pre-arrival support was excellent. They helped me arrange
+                  accommodation in Warsaw before arrival. The team was
+                  professional, responsive, and reliable—making the entire
+                  process smooth and stress-free."
+                </p>
+                <div class="flex justify-center items-center space-x-3">
+                  <img
+                    src="./assets/hajra-sayeed.jpg"
+                    alt="hajra-sayeed Profile"
+                    class="w-12 h-12 rounded-full object-cover border-2 border-accent-gold transition duration-300 hover:scale-105"
+                  />
+                  <div>
+                    <p class="font-bold text-white">Hajra Sayeed</p>
+                    <div class="text-accent-gold">
+                      <i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star-half-alt transition duration-300 hover:scale-110"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Initially Visible slide -->
+              <div
+                class="testimonial-slide testimonial-slide-transition p-8 bg-blue-900 rounded-xl shadow-2xl is-active flex flex-col"
+              >
+                <div class="text-2xl text-accent-gold mb-4">
+                  <i
+                    class="fas fa-quote-left transition duration-300 hover:scale-110"
+                  ></i>
+                </div>
+                <p class="text-lg italic mb-6">
+                  "Ubaid and his team are experts in European education. They
+                  streamlined the entire process for my Hungarian visa and
+                  admission. No hidden costs, just honest and effective
+                  service."
+                </p>
+                <div class="flex justify-center items-center space-x-3">
+                  <img
+                    src="./assets/aleena-ayaz.jpg"
+                    alt="aleena-ayaz Profile"
+                    class="w-12 h-12 rounded-full object-cover border-2 border-accent-gold transition duration-300 hover:scale-105"
+                  />
+                  <div>
+                    <p class="font-bold text-white">Aleena Ayaz</p>
+                    <div class="text-accent-gold">
+                      <i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="testimonial-slide testimonial-slide-transition p-8 bg-blue-900 rounded-xl shadow-2xl hidden"
+              >
+                <div class="text-2xl text-accent-gold mb-4">
+                  <i
+                    class="fas fa-quote-left transition duration-300 hover:scale-110"
+                  ></i>
+                </div>
+                <p class="text-lg italic mb-6">
+                  "Thanks to Hadaf Immigration, I received my student visa for
+                  Hungary without stress. Their team was efficient,
+                  communicative, and truly cared about my success. I highly
+                  recommend their expert guidance."
+                </p>
+                <div class="flex justify-center items-center space-x-3">
+                  <img
+                    src="./assets/qasim-ali.jpg"
+                    alt="qasim-ali profile"
+                    class="w-12 h-12 rounded-full object-cover border-2 border-accent-gold transition duration-300 hover:scale-105"
+                  />
+                  <div>
+                    <p class="font-bold text-white">Qasim Ali</p>
+                    <div class="text-accent-gold">
+                      <i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="testimonial-slide testimonial-slide-transition p-8 bg-blue-900 rounded-xl shadow-2xl hidden"
+              >
+                <div class="text-2xl text-accent-gold mb-4">
+                  <i
+                    class="fas fa-quote-left transition duration-300 hover:scale-110"
+                  ></i>
+                </div>
+                <p class="text-lg italic mb-6">
+                  "Studying in Portugal felt effortless with Hadaf Immigration.
+                  They handled everything from documentation to embassy
+                  appointments. Their support was timely, clear, and reassuring
+                  throughout the process. I'm incredibly grateful for them."
+                </p>
+                <div class="flex justify-center items-center space-x-3">
+                  <img
+                    src="./assets/salman-tariq.jpg"
+                    alt="salman-tariq profile"
+                    class="w-12 h-12 rounded-full object-cover border-2 border-accent-gold transition duration-300 hover:scale-105"
+                  />
+                  <div>
+                    <p class="font-bold text-white">Salman Tariq</p>
+                    <div class="text-accent-gold">
+                      <i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i
+                      ><i
+                        class="fas fa-star transition duration-300 hover:scale-110"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button
+              id="prev-testimonial"
+              class="absolute left-0 top-1/2 -translate-y-1/2 bg-accent-gold p-3 rounded-full text-primary-blue hover:bg-yellow-500 transition duration-300 shadow-lg transform hover:scale-110"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button
+              id="next-testimonial"
+              class="absolute right-0 top-1/2 -translate-y-1/2 bg-accent-gold p-3 rounded-full text-primary-blue hover:bg-yellow-500 transition duration-300 shadow-lg transform hover:scale-110"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Partner Universities -->
+      <section id="partners" class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2
+            class="text-sm font-semibold text-accent-gold uppercase tracking-widest mb-2 fade-in"
+          >
+            University Network
+          </h2>
+          <h3 class="text-4xl font-bold text-primary-blue mb-12 fade-in">
+            Our Official University Partners
+          </h3>
+
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-center fade-in"
+          >
+            <!-- Partner Logo Template -->
+            <div
+              class="p-4 rounded-xl transition duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              <img
+                src="./assets/logo- (1).jpg"
+                alt="University Logo A"
+                class="w-full h-auto grayscale hover:grayscale-0 transition duration-500"
+              />
+            </div>
+            <div
+              class="p-4 rounded-xl transition duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              <img
+                src="./assets/logo- (4).jpg"
+                alt="University Logo B"
+                class="w-full h-auto grayscale hover:grayscale-0 transition duration-500"
+                style="transition-delay: 0.1s"
+              />
+            </div>
+            <div
+              class="p-4 rounded-xl transition duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              <img
+                src="./assets/logo- (5).jpg"
+                alt="College Logo C"
+                class="w-full h-auto grayscale hover:grayscale-0 transition duration-500"
+                style="transition-delay: 0.2s"
+              />
+            </div>
+            <div
+              class="p-4 rounded-xl transition duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              <img
+                src="./assets/logo- (9).jpg"
+                alt="Tech School Logo D"
+                class="w-full h-auto grayscale hover:grayscale-0 transition duration-500"
+                style="transition-delay: 0.3s"
+              />
+            </div>
+            <div
+              class="p-4 rounded-xl transition duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              <img
+                src="./assets/logo- (10).jpg"
+                alt="Academy Logo E"
+                class="w-full h-auto grayscale hover:grayscale-0 transition duration-500"
+                style="transition-delay: 0.4s"
+              />
+            </div>
+            <div
+              class="p-4 rounded-xl transition duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              <img
+                src="./assets/logo- (12).jpg"
+                alt="Institute Logo F"
+                class="w-full h-auto grayscale hover:grayscale-0 transition duration-500"
+                style="transition-delay: 0.5s"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Contact Section -->
+      <section id="contact" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-sm font-semibold text-accent-gold uppercase tracking-widest mb-2 text-center fade-in"
+          >
+            Get In Touch
+          </h2>
+          <h3
+            class="text-4xl font-bold text-primary-blue mb-12 text-center fade-in"
+          >
+            We're Ready to Guide You
+          </h3>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div
+              class="bg-white p-8 rounded-xl shadow-2xl fade-in transform transition duration-500 hover:shadow-primary-blue/30"
+            >
+              <h4 class="text-2xl font-bold text-primary-blue mb-6">
+                Send Us a Message
+              </h4>
+              <form id="contact-form" onsubmit="handleContactFormSubmit(event)">
+                <div class="mb-4">
+                  <label
+                    for="name"
+                    class="block text-gray-700 font-semibold mb-2"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue transition"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="email"
+                    class="block text-gray-700 font-semibold mb-2"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue transition"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="subject"
+                    class="block text-gray-700 font-semibold mb-2"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue transition"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="message"
+                    class="block text-gray-700 font-semibold mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue transition"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-primary-blue text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-900 transition duration-300 transform hover:scale-[1.01]"
+                >
+                  <i
+                    class="fas fa-paper-plane mr-2 transition duration-300 group-hover:scale-110"
+                  ></i>
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact Details & Map -->
+            <div class="space-y-8 fade-in" style="transition-delay: 0.2s">
+              <!-- Contact Info -->
+              <div
+                class="p-8 bg-white rounded-xl shadow-2xl transform transition duration-500 hover:shadow-accent-gold/30"
+              >
+                <h4 class="text-2xl font-bold text-primary-blue mb-6">
+                  Direct Contacts
+                </h4>
+                <ul class="space-y-4 text-gray-700">
+                  <li class="flex items-center group">
+                    <i
+                      class="fas fa-envelope text-2xl text-accent-gold mr-4 transition duration-300 group-hover:scale-110 group-hover:text-primary-blue"
+                    ></i>
+                    <div>
+                      <p class="font-semibold">Email Us</p>
+                      <a
+                        href="mailto:info@hadafimmigration.com"
+                        class="text-primary-blue hover:text-accent-gold transition"
+                        >info@hadafimmigration.com</a
+                      >
+                    </div>
+                  </li>
+                  <li class="flex items-center group">
+                    <i
+                      class="fab fa-whatsapp text-2xl text-accent-gold mr-4 transition duration-300 group-hover:scale-110 group-hover:text-primary-blue"
+                    ></i>
+                    <div>
+                      <p class="font-semibold">WhatsApp Chat</p>
+                      <a
+                        href="https://wa.me/+923001234567"
+                        target="_blank"
+                        class="text-primary-blue hover:text-accent-gold transition"
+                        >+92 300 1234567</a
+                      >
+                    </div>
+                  </li>
+                  <li class="flex items-center group">
+                    <i
+                      class="fas fa-map-marker-alt text-2xl text-accent-gold mr-4 transition duration-300 group-hover:scale-110 group-hover:text-primary-blue"
+                    ></i>
+                    <div>
+                      <p class="font-semibold">Office Address</p>
+                      <p>Mustan Plaza, Jehangira Road, Swabi, Pakistan</p>
+                    </div>
+                  </li>
+                </ul>
+                <button
+                  onclick="openCallbackModal();"
+                  class="mt-6 w-full bg-accent-gold text-primary-blue font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition duration-300 transform hover:scale-[1.01]"
+                >
+                  <i
+                    class="fas fa-phone-alt mr-2 transition duration-300 group-hover:scale-110"
+                  ></i>
+                  Request a Call Back
+                </button>
+              </div>
+              <!-- Map Placeholder -->
+              <div
+                class="rounded-xl overflow-hidden shadow-2xl h-64 transform transition duration-500 hover:shadow-primary-blue/30 hover:scale-[1.01]"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dXXXXXX!2dXX.XXXXXX!3dXX.XXXXXX!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1sXXXXXXXXXXXX!2s4FGF%2B553%2C%20Gharibabad%20Maniri%2C%20Swabi!5e0!3m2!1sen!2sXX!4vXXXXXXXXXXXX!5m2!1sen!2sXX"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-blue text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-blue-700 pb-8 mb-8"
+        >
+          <!-- Company Info -->
+          <div>
+            <h5 class="text-2xl font-bold text-accent-gold mb-4">
+              Hadaf Immigration
+            </h5>
+            <p class="text-gray-300 text-sm">
+              Guiding students towards quality education in Europe with
+              transparency and expert support.
+            </p>
+          </div>
+          <!-- Quick Links -->
+          <div class="quick-links">
+            <h5 class="font-bold text-lg mb-4">Quick Links</h5>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#about" class="hover:transition hover:translate-x-1"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="hover:transition hover:translate-x-1"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#success" class="hover:transition hover:translate-x-1"
+                  >Success Stories</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:transition hover:translate-x-1"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Legal Links -->
+          <div class="legal-links">
+            <h5 class="font-bold text-lg mb-4">Legal</h5>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="privacy.html"
+                  class="hover:transition hover:translate-x-1"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="terms.html"
+                  class="hover:transition hover:translate-x-1"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Follow Us -->
+          <div>
+            <h5 class="font-bold text-lg mb-4">Follow Us</h5>
+            <div class="flex space-x-4 text-2xl">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="social hover:transition duration-300 transform hover:scale-110"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social hover:transition duration-300 transform hover:scale-110"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="social hover:transition duration-300 transform hover:scale-110"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://wa.me/+923001234567"
+                target="_blank"
+                class="social hover:transition duration-300 transform hover:scale-110"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center text-sm text-gray-400">
+          <p>
+            Copyright <i class="fa-regular fa-copyright"></i> 2025 Hadaf
+            Immigration Consultancy. All rights reserved.
+          </p>
+          <p class="developer">
+            Designed & Designed by
+            <a href="mailto:iubaidahmad303@gmail.com"
+              >Ubaid Ahmad <i class="fa-solid fa-code"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Global Confirmation/Success Modal -->
+    <div
+      id="confirmation-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[200]"
+      onclick="closeConfirmationModal()"
+    >
+      <div
+        class="bg-white p-8 rounded-xl shadow-2xl max-w-sm w-full text-center transform transition duration-300 scale-90"
+        onclick="event.stopPropagation();"
+      >
+        <div class="text-6xl text-green-500 mb-4 animate-bounce">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h4 class="text-2xl font-bold text-primary-blue mb-2">Success!</h4>
+        <p id="confirmation-message" class="text-gray-600 mb-4">
+          Message sent successfully!
+        </p>
+        <button
+          onclick="closeConfirmationModal()"
+          class="mt-4 bg-primary-blue text-white py-2 px-6 rounded-lg hover:bg-blue-900 transition duration-300 transform hover:scale-[1.05]"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Request a Call Back Modal -->
+    <div
+      id="callback-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[200]"
+      onclick="closeCallbackModal()"
+    >
+      <div
+        class="bg-white p-8 rounded-xl shadow-2xl max-w-lg w-full transform transition duration-300 scale-90"
+        onclick="event.stopPropagation();"
+      >
+        <h4
+          class="text-2xl font-bold text-primary-blue mb-6 border-b pb-3 flex justify-between items-center"
+        >
+          Request a Call Back
+          <button
+            onclick="closeCallbackModal()"
+            class="text-gray-500 hover:text-primary-blue transition duration-300 transform hover:scale-110"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </h4>
+        <form id="callback-form" onsubmit="handleCallbackFormSubmit(event)">
+          <div class="mb-4">
+            <label
+              for="callback-name"
+              class="block text-gray-700 font-semibold mb-2"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="callback-name"
+              name="name"
+              required
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue transition"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="callback-phone"
+              class="block text-gray-700 font-semibold mb-2"
+              >Phone Number</label
+            >
+            <input
+              type="tel"
+              id="callback-phone"
+              name="phone"
+              required
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue transition"
+              placeholder="+92 3XX XXXXXXX"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              for="callback-country"
+              class="block text-gray-700 font-semibold mb-2"
+              >Country of Interest</label
+            >
+            <select
+              id="callback-country"
+              name="country"
+              required
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-blue focus:border-primary-blue transition"
+            >
+              <option value="">Select Country</option>
+              <option value="Lithuania">Lithuania</option>
+              <option value="Poland">Poland</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Other">Other European Country</option>
+            </select>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-primary-blue text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-900 transition duration-300 transform hover:scale-[1.01]"
+          >
+            <i
+              class="fas fa-phone mr-2 transition duration-300 group-hover:scale-110"
+            ></i>
+            Submit Request
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

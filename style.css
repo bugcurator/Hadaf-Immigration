@@ -1,0 +1,102 @@
+:root {
+  --primary-blue: #1e3a8a;
+  --accent-gold: #facc15;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+.text-primary-blue {
+  color: var(--primary-blue);
+}
+.bg-primary-blue {
+  background-color: var(--primary-blue);
+  backdrop-filter: brightness(0.5);
+}
+.text-accent-gold {
+  color: var(--accent-gold);
+}
+.bg-accent-gold {
+  background-color: var(--accent-gold);
+}
+
+/* Animation for fade-in elements */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Banner Simulation */
+.hero-banner {
+  background-image: url("./assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.hero {
+  background-color: rgba(21, 48, 115, 0.6);
+}
+/* Testimonial Transition */
+.testimonial-slide-transition {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.testimonial-slide-transition.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #153073;
+}
+
+/* Loader Animation */
+#loader {
+  transition: opacity 0.5s ease-out;
+}
+.spinner {
+  border-top-color: var(--accent-gold);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.social:hover,
+nav a:hover {
+  color: #facc15;
+}
+.quick-links a:hover,
+.legal-links a:hover,
+footer div a:hover,
+.back-to-home:hover,
+.mobile-nav-links a:hover {
+  color: #facc15;
+}
+.developer a {
+  color: #facc15;
+  text-align: center;
+}
+.developer a:hover {
+  text-decoration: underline;
+}
